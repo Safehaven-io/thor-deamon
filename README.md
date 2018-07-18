@@ -42,7 +42,7 @@ THORARGS="--network test"
 THORARGS="--network main"
 ```
 
-### Commands
+### commands
 ```
 systemctl status thor
 ```
