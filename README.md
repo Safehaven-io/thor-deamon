@@ -43,9 +43,9 @@ THORARGS="--network main"
 ```
 solo client runs in solo mode for test & dev
 ```
-bin/thor solo --on-demand               # create new block when there is pending transaction
-bin/thor solo --persist                 # save blockchain data to disk(default to memory)
-bin/thor solo --persist --on-demand     # two options can work together
+THORARGS="solo --on-demand"               # create new block when there is pending transaction
+THORARGS="solo --persist"                 # save blockchain data to disk(default to memory)
+THORARGS="solo --persist --on-demand"     # two options can work together
 ```
 
 ### commands
