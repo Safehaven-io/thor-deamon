@@ -48,6 +48,30 @@ THORARGS="solo --persist"                 # save blockchain data to disk(default
 THORARGS="solo --persist --on-demand"     # two options can work together
 ```
 
+The thor status when running in solo (test & dev) mode
+```
+● thor.service - Thor VeChain Daemon
+   Loaded: loaded (/etc/systemd/system/thor.service; enabled; vendor preset: enabled)
+   Active: active (running) since Wed 2018-07-18 10:57:51 UTC; 3s ago
+ Main PID: 7175 (thor)
+    Tasks: 12
+   Memory: 345.2M
+      CPU: 94ms
+   CGroup: /system.slice/thor.service
+           └─7175 /usr/local/thor/bin/thor solo --persist --on-demand
+
+Jul 18 10:57:52 vthor-chain thor[7175]: ├────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+Jul 18 10:57:52 vthor-chain thor[7175]: │ 0x29f72dc07224a4c6270407bfd6b8fec559d29f6c │ 0xfbb9e7ba5fe9969a71c6599052237b91adeb1e5fc0c96727b66e56ff5d02f9d0 │
+Jul 18 10:57:52 vthor-chain thor[7175]: ├────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+Jul 18 10:57:52 vthor-chain thor[7175]: │ 0x47109a193c49862c89bd76fe2de3585743dd2bb0 │ 0x547fb081e73dc2e22b4aae5c60e2970b008ac4fc3073aebc27d41ace9c4f53e9 │
+Jul 18 10:57:52 vthor-chain thor[7175]: ├────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+Jul 18 10:57:52 vthor-chain thor[7175]: │ 0xa5e255d4c65af201b97210ff4cd9521a46427654 │ 0xc8c53657e41a8d669349fc287f57457bd746cb1fcfc38cf94d235deb2cfca81b │
+Jul 18 10:57:52 vthor-chain thor[7175]: ├────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────┤
+Jul 18 10:57:52 vthor-chain thor[7175]: │ 0x0489a3fff1930b85f1d73eff8a4699281aadb558 │ 0x87e0eba9c86c494d98353800571089f316740b0cb84c9a7cdf2fe5c9997c7966 │
+Jul 18 10:57:52 vthor-chain thor[7175]: └────────────────────────────────────────────┴────────────────────────────────────────────────────────────────────┘
+Jul 18 10:57:52 vthor-chain thor[7175]: t=2018-07-18T10:57:52+0000 lvl=info msg="prepared to pack block"
+```
+
 ### commands
 ```
 systemctl status thor
