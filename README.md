@@ -27,13 +27,19 @@ Alias=thor.service
 ```
 ### ENV variables
 ```
-/etc/thor/environ/
+/etc/thor/environ
 ```
 ```
 GOROOT=/usr/local/go
 GOPATH=/usr/local/thor
 PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 THORARGS="--network test"
+```
+
+If you want to switch in between Vechain's main and test net, just change the thor arguments in the environ file.
+```
+THORARGS="--network test"
+THORARGS="--network main"
 ```
 
 ### Commands
