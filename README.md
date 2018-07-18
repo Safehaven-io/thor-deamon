@@ -5,9 +5,9 @@ Creating and Modifying thor systemd Unit Files.
 This can be usefull to be able to use standard systemctl status commands and in order to start the deamon on reboot.
 
 ### thor.service
-
+```
 /etc/systemd/system/
-
+```
 ```
 [Unit]
 Description=Thor VeChain Daemon
@@ -26,9 +26,9 @@ WantedBy=multi-user.target
 Alias=thor.service
 ```
 ### ENV variables
-
+```
 /etc/thor/environ/
-
+```
 ```
 GOROOT=/usr/local/go
 GOPATH=/usr/local/thor
