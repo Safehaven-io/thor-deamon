@@ -1,7 +1,8 @@
 # thor-deamon
 
 
-Creating and Modifying thor systemd Unit Files
+Creating and Modifying thor systemd Unit Files.
+This can be usefull to be able to use standard systemctl status commands and in order to start the deamon on reboot.
 
 ### thor.service
 
@@ -34,4 +35,6 @@ GOPATH=/usr/local/thor
 PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 THORARGS="--network test"
 ```
+
+
 
