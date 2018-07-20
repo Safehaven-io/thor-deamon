@@ -4,6 +4,10 @@
 Creating and Modifying thor systemd Unit Files.
 This can be usefull in order to be able to use standard systemctl status commands and in order to start the deamon on reboot.
 
+Units are the objects that systemd knows how to manage. These are basically a standardized representation of system resources that can be managed by the suite of daemons and manipulated by the provided utilities.
+Units in some ways can be said to similar to services or jobs in other init systems. However, a unit has a much broader definition, as these can be used to abstract services, network resources, devices, filesystem mounts, and isolated resource pools.
+Ideas that in other init systems may be handled with one unified service definition can be broken out into component units according to their focus. This organizes by function and allows you to easily enable, disable, or extend functionality without modifying the core behavior of a unit.
+
 ### thor.service
 ```
 /etc/systemd/system/
