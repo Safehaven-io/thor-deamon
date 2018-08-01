@@ -1,6 +1,5 @@
 # thor-deamon
 
-
 Creating and Modifying thor systemd Unit Files.
 This can be usefull in order to be able to use standard systemctl status commands and in order to start the deamon on reboot.
 
