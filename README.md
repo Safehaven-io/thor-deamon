@@ -21,6 +21,7 @@ KillMode=process
 Restart=on-failure
 Type=simple
 
+
 [Install]
 WantedBy=multi-user.target
 Alias=thor.service
